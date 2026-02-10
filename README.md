@@ -160,4 +160,28 @@ To reduce runtime, modify `config.py`:
 ```
 
 
+## Project Structure
+
+```
+shairamanandhar_assignment1_final/
+├── data/                   # Raw and processed datasets
+├── data_loaders/           # Dataset loading and preprocessing logic
+│   └── loaders.py
+├── models/                 # Model architecture implementations
+│   ├── model1_mlp.py
+│   ├── model2_cnn.py
+│   └── model3_vit.py
+├── results/                # Generated metrics and plots
+│   ├── final_metrics.csv
+│   ├── *_loss_curve.png
+│   ├── *_f1_curve.png
+│   └── *_accuracy_curve.png
+├── config.py               # Experiment configuration (datasets, models, hyperparameters)
+├── train.py                # Training and evaluation utilities
+├── main.py                 # Main entry point to run experiments
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+```
+
+
 
