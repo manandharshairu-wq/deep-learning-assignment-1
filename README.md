@@ -84,7 +84,7 @@ Full metrics, training time, parameter counts, and learning curves are saved in 
 ---
 
 ## Reproducibility
-1. Open the notebook in **Google Colab**
+1. Open the ShairaManandhar_Assignment1.ipynb notebook in **Google Colab**
 2. Ensure **GPU is enabled**
 3. Run all cells one by one
 4. Run:
