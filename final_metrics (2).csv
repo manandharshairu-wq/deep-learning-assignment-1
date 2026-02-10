@@ -1,0 +1,7 @@
+Dataset,Architecture,Accuracy,F1,Notes
+Adult,MLP,0.8535,0.6669,time=8.5s; best_epoch=12; params=140801
+Adult,CNN,0.8548,0.6702,time=9.0s; best_epoch=10; params=14177
+Adult,TabularAttention,0.8511,0.6769,time=14.7s; best_epoch=7; params=105345
+CIFAR-100(0-9),MLP,0.555,0.5541,time=16.7s; best_epoch=8; params=1708810
+CIFAR-100(0-9),CNN,0.69,0.6884,time=17.4s; best_epoch=11; params=1070794
+CIFAR-100(0-9),ViT,0.623,0.6266,time=21.2s; best_epoch=12; params=412810
