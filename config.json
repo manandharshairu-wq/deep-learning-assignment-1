@@ -1,0 +1,46 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "optimizer": "adam",
+  "lr": 0.001,
+  "batch_size": 128,
+  "epochs": 12,
+  "early_stopping": {
+    "enabled": true,
+    "monitor": "val_loss",
+    "patience": 3,
+    "min_delta": 0.0
+  },
+  "run_datasets": [
+    "Adult",
+    "CIFAR-100(0-9)"
+  ],
+  "run_architectures": [
+    "MLP",
+    "CNN",
+    "ViT"
+  ],
+  "adult_test_size": 0.2,
+  "adult_val_size": 0.15,
+  "val_fraction": 0.15,
+  "pcam_train_limit": 10000,
+  "pcam_val_limit": 2000,
+  "pcam_test_limit": 2000,
+  "tabattn": {
+    "d_model": 64,
+    "heads": 4,
+    "layers": 2,
+    "dropout": 0.1
+  },
+  "vit": {
+    "patch": 4,
+    "dim": 128,
+    "heads": 4,
+    "layers": 2,
+    "dropout": 0.1
+  },
+  "bonus": {
+    "make_learning_curve_comparison": true,
+    "save_param_counts": true
+  }
+}
